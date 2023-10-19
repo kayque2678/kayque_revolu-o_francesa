@@ -1,0 +1,21 @@
+header{
+    background-color: #1E91D6;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    width: 100%;
+    top: 0px;
+}
+
+a{
+    color: aliceblue;
+    margin: 50px;
+    text-decoration: none;
+}
+
+.mapa_1{
+    width: 500px;
+    height: auto;
+}
