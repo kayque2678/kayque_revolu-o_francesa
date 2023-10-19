@@ -14,6 +14,9 @@ a{
     margin: 50px;
     text-decoration: none;
 }
+a:hover{
+    text-decoration: underline;
+}
 
 .mapa_1{
     width: 500px;
