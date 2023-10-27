@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@100&display=swap');
 
 #bastilha{
-    border: 2px solid #000;
     display: flex;
     border-radius: 16px;
     width: 276px;
@@ -13,6 +12,7 @@
 #imagem1{
     border-radius: 16px;
     position: center;
+    border: 2px solid #000;
 }
 
 header{

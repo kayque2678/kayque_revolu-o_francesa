@@ -17,8 +17,17 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
+.mapas_mentais{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
 .mapa_1{
     width: 500px;
     height: auto;
+}
+.mapa_2{
+    width: 500px;
+    height: auto
 }
