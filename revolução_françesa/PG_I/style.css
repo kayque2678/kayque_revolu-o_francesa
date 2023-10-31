@@ -30,7 +30,7 @@ body {
     margin-top: 6rem;
 }
 
-a{
+header a{
     color: aliceblue;
     margin: 50px;
     text-decoration: none;
@@ -39,9 +39,14 @@ a{
 a:hover{
     text-decoration: underline;
 }
-p{
+.pesquisa{
     font-family: 'Courier New', Courier, monospace;
 }
 .header_bastilha{
-    padding-top: 1px;
+    padding-top: 0,0625rem;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
