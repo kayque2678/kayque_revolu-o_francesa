@@ -10,7 +10,7 @@
 }
 
 #imagem1{
-    border-radius: 16px;
+    border-radius: 2rem;
     position: center;
     border: 2px solid #000;
 }
@@ -27,7 +27,14 @@ header{
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeeae7 ;
     margin-top: 6rem;
+}
+
+.conteudo{
+    display: flex;
 }
 
 header a{
@@ -39,8 +46,15 @@ header a{
 a:hover{
     text-decoration: underline;
 }
+
+.sumario{
+    border: 2px black solid;
+    padding: 2rem;
+}
+
 .pesquisa{
     font-family: 'Courier New', Courier, monospace;
+    margin-left: 2rem;
 }
 .header_bastilha{
     padding-top: 0,0625rem;
