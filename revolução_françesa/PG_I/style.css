@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@100&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #bastilha{
     display: flex;
     border-radius: 16px;
@@ -13,6 +20,7 @@
     border-radius: 2rem;
     position: center;
     border: 2px solid #000;
+    margin: 20px;
 }
 
 header{
@@ -24,6 +32,7 @@ header{
     position:fixed;
     width: 100%;
     top: 0px;
+    box-shadow: 1px 4px 20px black;
 }
 
 body {
@@ -41,10 +50,19 @@ header a{
     color: aliceblue;
     margin: 50px;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-a:hover{
-    text-decoration: underline;
+header a:hover{
+    text-decoration: none;
+    background-color: #226691;
+    box-shadow: 1px 1px 1px black;
+}
+
+header a:active{
+    cursor: progress;
+    translate: 2s;
 }
 
 .sumario{
@@ -53,9 +71,9 @@ a:hover{
 }
 
 .pesquisa{
-    font-family: 'Courier New', Courier, monospace;
     margin-left: 2rem;
 }
+
 .header_bastilha{
     padding-top: 0,0625rem;
 }
