@@ -7,39 +7,102 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-#bastilha{
-    display: flex;
-    border-radius: 16px;
-    width: 276px;
-    margin-top: 20px; 
+:root{
+    --branco-preteado: #eeeae7;
+    --amarelo: #fbff00;
+}
+
+header {
+    text-align: end;
+}
+
+.header_bastilha{
+    background-image: url('../imagens/Reign\ of\ Terror\,\ Joakim\ Ericsson.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin: 0 0 20px 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-#imagem1{
-    border-radius: 2rem;
-    position: center;
-    border: 2px solid #000;
-    margin: 20px;
-}
-
-header{
-    background-color: #1E91D6;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    width: 100%;
-    top: 0px;
-    box-shadow: 1px 4px 20px black;
-}
-
 body {
-    width: 100vw;
     height: 100vh;
-    background-color: #eeeae7 ;
-    margin-top: 6rem;
+    background-color: var(--branco-preteado);
+}
+
+body.escurecer::before {
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    position: fixed;
+    background-color: var(--branco-preteado);
+    right: -16rem;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+header nav.abrir {
+    right: 0;
+}
+
+header a:active{
+    text-decoration: none;
+    border-bottom: 5px solid var(--amarelo);
+    color: #777777;
+}
+
+header button {
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+header nav button{
+    align-self: flex-end;
+    margin-bottom: 4rem;
+}
+
+header img {
+    width: 3rem;
+}
+
+.button1{
+    padding: 1.5rem;
+}
+
+.pg_titulo,#bastilha h3,#bastilha p {
+    color: var(--branco-preteado);
+    margin: 20px 0 0 20px;
+}
+
+#bastilha h3{
+    display: inline-block;
+    border-left: 4px solid var(--amarelo);
+    border-right: 4px solid var(--amarelo);
+    padding: 0 5px 0 5px;
+}
+
+.resumo{
+    width: 24rem;
+}
+
+p{
+    font-size: 14px;
 }
 
 .conteudo{
@@ -47,38 +110,46 @@ body {
 }
 
 header a{
-    color: aliceblue;
-    margin: 50px;
+    color: #000000;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10px;
-}
-
-header a:hover{
-    text-decoration: none;
-    background-color: #226691;
-    box-shadow: 1px 1px 1px black;
-}
-
-header a:active{
-    cursor: progress;
-    translate: 2s;
 }
 
 .sumario{
-    border: 2px black solid;
-    padding: 2rem;
+    display: none;
+    margin: 0 40px 0 40px;
+    height: 40rem;
+    border: 2px solid black;
+    padding: 2rem 7rem;
+    border-radius: 10px;
 }
 
 .pesquisa{
-    margin-left: 2rem;
+    margin: 0 10px 0 10px ;
+    border-radius: 10px;
 }
 
-.header_bastilha{
-    padding-top: 0,0625rem;
+.pesquisa h2{
+    margin: 20px 0 0px 5px;
+    font-size: 1.875rem;
 }
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.pesquisa h3{
+    margin: 5px;
+}
+
+p::selection, h1::selection , h2::selection, h3::selection, h6::selection {
+    background-color: var(--amarelo);
+    color: black;
+}
+
+.pesquisa p {
+    font-size: 0.875rem;
+}
+
+.linha-esquerda{
+    margin: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 5px solid #C7C7C7;
 }
